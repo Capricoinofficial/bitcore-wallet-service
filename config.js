@@ -63,23 +63,23 @@ var config = {
         addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
       },
     },
-    part: {
+    cps: {
       livenet: {
         provider: 'insight',
-        url: 'https://explorer.particl.io:443',
-        apiPrefix: '/particl-insight-api'
+        url: 'https://explorer.capricoin.org:443',
+        apiPrefix: '/api'
       },
       testnet: {
         provider: 'insight',
-        url: 'https://explorer-testnet.particl.io:443',
-        apiPrefix: '/particl-insight-api'
+        url: 'https://testnet-explorer.capricoin.org:443',
+        apiPrefix: '/api'
       },
     },
   },
   pushNotificationsOpts: {
     templatePath: './lib/templates',
     defaultLanguage: 'en',
-    defaultUnit: 'part',
+    defaultUnit: 'cps',
     subjectPrefix: '',
     pushServerUrl: 'https://fcm.googleapis.com/fcm',
     authorizationKey: 'You_have_to_put_something_here',
