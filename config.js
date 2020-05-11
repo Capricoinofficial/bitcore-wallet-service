@@ -88,33 +88,25 @@ var config = {
     defaultProvider: 'BitPay',
     fetchInterval: 60, // in minutes
   },
-  // To use email notifications uncomment this:
-  // emailOpts: {
-  //  host: 'localhost',
-  //  port: 25,
-  //  ignoreTLS: true,
-  //  subjectPrefix: '[Wallet Service]',
-  //  from: 'wallet-service@bitcore.io',
-  //  templatePath: './lib/templates',
-  //  defaultLanguage: 'en',
-  //  defaultUnit: 'btc',
-  //  publicTxUrlTemplate: {
-  //    btc: {
-  //      livenet: 'https://insight.bitpay.com/tx/{{txid}}',
-  //      testnet: 'https://test-insight.bitpay.com/tx/{{txid}}',
-  //    },
-  //    bch: {
-  //      livenet: 'https://bch-insight.bitpay.com/#/tx/{{txid}}',
-  //      testnet: 'https://test-bch-insight.bitpay.com/#/tx/{{txid}}',
-  //    }
-  //  },
-  // },
-  // To use sendgrid:
-  // const sgMail = require('@sendgrid/mail');
-  // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  //
-  //
-  // //then add:
-  // mailer: sgMail,
+  // To use email notifications set up an sgMail account then uncomment this:
+  /*
+  emailOpts: {
+    subjectPrefix: '[Wallet Service]',
+    from: 'wallet-service@capricoin.org',
+    templatePath: './lib/templates',
+    defaultLanguage: 'en',
+    defaultUnit: 'btc',
+    publicTxUrlTemplate: {
+      btc: {
+        livenet: 'https://insight.bitpay.com/tx/{{txid}}',
+        testnet: 'https://test-insight.bitpay.com/tx/{{txid}}',
+      },
+      cps: {
+        livenet: 'https://explorer.capricoin.org/tx/{{txid}}',
+        testnet: 'https://testnet-explorer.capricoin.org/tx/{{txid}}',
+      }
+    },
+  },
+*/
 };
 module.exports = config;
