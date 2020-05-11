@@ -95,7 +95,7 @@ var config = {
     from: 'wallet-service@capricoin.org',
     templatePath: './lib/templates',
     defaultLanguage: 'en',
-    defaultUnit: 'btc',
+    defaultUnit: 'cps',
     publicTxUrlTemplate: {
       btc: {
         livenet: 'https://insight.bitpay.com/tx/{{txid}}',
