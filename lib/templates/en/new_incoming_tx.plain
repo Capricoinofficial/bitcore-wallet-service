@@ -1,2 +1,2 @@
-{{subjectPrefix}}New payment received
-A payment of {{amount}} has been received into your wallet.
+{{subjectPrefix}}收到新的付款
+您的钱包已收到{{amount}}。

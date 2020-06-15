@@ -1,2 +1,2 @@
-{{subjectPrefix}}Payment sent
-A Payment of {{amount}} has been sent from your wallet.
+{{subjectPrefix}}付款已发送
+已从您的钱包中支付了{{amount}}。
